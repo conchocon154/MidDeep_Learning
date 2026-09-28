@@ -29,10 +29,10 @@ trained.
 | `data_loader.py` | COCO dataset wrapper and batching by caption length |
 | `vocabulary.py` | Vocabulary built from training captions, with `<start>`/`<end>`/`<unk>` |
 | `utils.py` | Training and validation loops, BLEU scoring, checkpointing, early stopping |
-| `0_Dataset.ipynb` | Exploring the COCO captions |
-| `1_Preliminaries.ipynb` | Data loader and vocabulary |
-| `2_Training.ipynb` | Training run |
-| `3_Inference.ipynb` | Generating captions for test images |
+| `notebooks/0_Dataset.ipynb` | Exploring the COCO captions |
+| `notebooks/1_Preliminaries.ipynb` | Data loader and vocabulary |
+| `notebooks/2_Training.ipynb` | Training run |
+| `notebooks/3_Inference.ipynb` | Generating captions for test images |
 | `vocab.pkl` | The vocabulary built during training |
 
 ## Decoding
@@ -67,11 +67,11 @@ git clone https://github.com/cocodataset/cocoapi.git
 cd cocoapi/PythonAPI && make && cd ../..
 ```
 
-Run the notebooks in numerical order.
+Run the notebooks in `notebooks/` in numerical order; the first cell of each
+moves to the repository root, where the modules and `vocab.pkl` live.
 
 ## Notes
 
-Coursework for a deep learning course, completed as a two-person project
-(student IDs 520K0323 and 520K0108); `520K0323-520K0108.pptx` is the
-accompanying presentation. Trained model weights are not included — the
-checkpoints were too large to commit.
+Coursework for a deep learning course, completed as a two-person project.
+Trained model weights are not included — the checkpoints were too large to
+commit.

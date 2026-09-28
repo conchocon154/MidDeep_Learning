@@ -1,0 +1,10 @@
+torch
+torchvision
+nltk
+numpy
+matplotlib
+Pillow
+scikit-image
+pycocotools
+requests
+tqdm
